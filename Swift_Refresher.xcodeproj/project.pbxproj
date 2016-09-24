@@ -10,6 +10,7 @@
 		F7BB066C1D9731CA00C6A849 /* Swift_Refresher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BB06621D9731CA00C6A849 /* Swift_Refresher.framework */; };
 		F7BB06711D9731CA00C6A849 /* Swift_RefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB06701D9731CA00C6A849 /* Swift_RefresherTests.swift */; };
 		F7BB06731D9731CA00C6A849 /* Swift_Refresher.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BB06651D9731CA00C6A849 /* Swift_Refresher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7BB067D1D9731E300C6A849 /* SwiftRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB067C1D9731E300C6A849 /* SwiftRefresher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F7BB066B1D9731CA00C6A849 /* Swift_RefresherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_RefresherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BB06701D9731CA00C6A849 /* Swift_RefresherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_RefresherTests.swift; sourceTree = "<group>"; };
 		F7BB06721D9731CA00C6A849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7BB067C1D9731E300C6A849 /* SwiftRefresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRefresher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BB06651D9731CA00C6A849 /* Swift_Refresher.h */,
+				F7BB067C1D9731E300C6A849 /* SwiftRefresher.swift */,
 				F7BB06661D9731CA00C6A849 /* Info.plist */,
 			);
 			path = Swift_Refresher;
@@ -149,6 +152,7 @@
 					F7BB06611D9731CA00C6A849 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6EFGV8H972;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F7BB066A1D9731CA00C6A849 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BB067D1D9731E300C6A849 /* SwiftRefresher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		F7BB06771D9731CA00C6A849 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.greybeard.Swift-Refresher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		F7BB06781D9731CA00C6A849 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -360,6 +368,7 @@
 		F7BB067A1D9731CA00C6A849 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = Swift_RefresherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		F7BB067B1D9731CA00C6A849 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = Swift_RefresherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
