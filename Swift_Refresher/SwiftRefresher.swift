@@ -8,13 +8,7 @@
 
 import Foundation
 
-let array = [10, 4, 1, 6, 2]
-let n = array.count
-var enhancedArray = [Int]()
-let arrayWithDupes = [1,  4,  21, 21, 50, 50, 50, 50, 100, 101]
-
-
-func awesomeFunction (_: [Int])-> Int {
+func awesomeFunction (array: [Int])-> Int {
     var product = 1
     for number in array {
         product = product * number
@@ -22,17 +16,19 @@ func awesomeFunction (_: [Int])-> Int {
     return product
 }
 
-func enhanceArray (_: [Int])-> [Int]{
+func enhanceArray (array: [Int])-> [Int]{
+    let n = array.count
+    var enhancedArray = [Int]()
     var enhancedValue: Int = 0
     
     for index in 0...(n-1) {
-        enhancedValue = awesomeFunction(array)/array[index]
+        enhancedValue = awesomeFunction(array: array)/array[index]
         enhancedArray.append(enhancedValue)
     }
     return enhancedArray
 }
 
-func dedupeSortedArray (_: [Int])->([Int], Int) {
+func dedupeSortedArray (arrayWithDupes: [Int])->([Int], Int) {
     var result = [Int]()
     let c = arrayWithDupes.count
     
